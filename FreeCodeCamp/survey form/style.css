@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+  font-size: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box;
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+
+}
+
+body {
+  margin: 0;
+  color: var(--color-white);
+}
+
+body:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+#main-container {
+  display: block;
+  width: 60%;
+  margin: 3.125rem auto 0 auto;
+}
+
+@media (max-width: 576px) {
+  #main-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  #main-container {
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+form {
+  display: block;
+  margin: auto;
+  background-color: var(--color-darkblue-alpha);
+  height: 100%;
+  border-radius: 0.25rem;
+  padding: 2.5rem 2.5rem;
+
+}
+
+@media (max-width: 576px) {
+  form {
+    padding: 2.5rem 0.6rem;
+  }
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-size: 1rem;
+  margin: 0 auto 1.25rem auto;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+label, p {
+  font-size: 1.1rem;
+  margin: 1rem auto 1.25rem auto;
+}
+
+[type="checkbox"] {
+  margin-right: 3px;
+}
+
+[type="radio"] {
+  margin-right: 3px;
+}
+
+#dropdown, #dropdown-two {
+  display: inline-block;
+  width: 100%;
+  height: 2.4rem;
+  font-family: 'Poppins', sans-serif;
+  margin: auto;
+  color: #495057;
+  background-color: #fff;
+}
+
+span {
+  font-size: 0.9rem;
+}
+
+.check-input {
+  display: inline-block;
+
+}
+
+#comments {
+  height: 10rem;
+  padding: ;
+  resize: vertical;
+  font-family: 'Poppins', sans-serif;
+}
+
+#submit {
+  display: block;
+  width: 100%;
+  margin: 0;
+  height: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: var(--color-white);
+  background: var(--color-green);
+  cursor: pointer;
+  border-radius: 5px;
+  margin: auto;
+  border: none;
+  box-sizing: border-box;
+}

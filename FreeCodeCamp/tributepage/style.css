@@ -1,0 +1,48 @@
+#main {
+  background-color: lightgrey;
+  height: auto;
+  font-size: 100%;
+  font-family: 'Helvetica Neue',
+    Arial, sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  padding: 15px;
+  color: #333;
+  margin: 30px 8px;
+}
+#title {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+#img-div {
+  background-color: white;
+  padding: 10px;
+  margin: 0;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+#img-caption {
+  margin: 15px 0 5px 0;
+}
+
+ul {
+  max-width: 45%;
+  margin: auto;
+}
+
+li {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  max-width: 45%;
+  margin: 50px auto;
+  text-align: left;
+}

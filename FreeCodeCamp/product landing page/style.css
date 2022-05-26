@@ -1,0 +1,258 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: Lato, sans-serif;
+  background-color: #eee;
+}
+
+main {
+  padding-top: 80px;
+}
+
+#main, #header {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#features {
+  width: 90%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
+  padding: 15px 0px;
+  background-color: #eee;
+}
+
+#header-img {
+  max-width: 100%;
+  height: auto;
+  margin-left: -10px;
+}
+
+#nav-bar {
+  float: right;
+  width: 100%;
+  text-align: right;
+}
+
+#nav-bar li{
+  display: inline-block;
+  margin: 10px 10px;
+}
+
+@media (max-width: 594px) {
+  #header {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+    #nav-bar {
+    width: 100%;
+    text-align: center;
+  }
+    main {
+    padding-top: 10px;
+  }
+}
+
+#form {
+  padding-left: 0;
+}
+
+#contact {
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#contact * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 400px) {
+  #contact {
+    margin: .2rem;
+  }
+}
+
+[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+  margin: auto auto;
+  margin-top: 1.2rem;
+}
+
+[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  padding: 8px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: .125rem;
+  border: 0;
+  background: #f1c40f;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#features {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-contents: center;
+}
+
+.feature {
+  margin: 0 0;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  align-items:  flex-start;
+  justify-content: center;
+  height: 125px;
+}
+
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+  float: left;
+}
+
+@media (max-width: 400px) {
+  #features {
+    align-items: center;
+    justify-contents: center;
+    margin: 25px auto;
+  }
+
+  .icon {
+    float: none;
+    margin: auto auto;
+  }
+}
+
+#how-it-works {
+  text-align: center;
+  padding: 5px;
+}
+
+#video {
+  max-width: 560px;
+  width: 100%;
+}
+
+#pricing {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 930px) {
+  #pricing {
+    flex-wrap: wrap;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3); /*nice trick, remember function*/
+  min-width: 300px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.price h3 {
+  background-color: lightgrey;
+  width: 100%;
+  padding: 15px;
+}
+
+.price h4 {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.price li {
+  padding: 5px;
+}
+
+.price button {
+  margin: 20px;
+  padding: 0px 20px;
+  background-color: #f1c40f;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.price button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+#footer {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: lightgrey;
+  padding: 15px 20px;
+}
+
+footer ul {
+  text-align: right;
+}
+
+footer li {
+  display: inline-block;
+  margin: 5px 5px;
+}
+
+footer p {
+  opacity: .6;
+}

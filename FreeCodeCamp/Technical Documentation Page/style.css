@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root {
+  --min-nav-width: 320px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  color: #4d4e53;
+}
+
+#main-container {
+  /*display: grid;
+  grid-template-columns: minmax(var(--min-nav-width), 25%) 75%;*/
+}
+
+#nav-container {
+  margin: 0;
+  border-right: 1px solid black;
+  width: 25%;
+  height: 100vh;
+  min-width: var(--min-nav-width);
+  overflow-y: scroll;
+  float: left;
+}
+
+#nav-container header {
+  color: black;
+  position: fixed;
+  top: 0;
+  padding: 0px 35px;
+  background-color: white;
+  font-size: 1.0rem;
+  width: 25%;
+  min-width: var(--min-nav-width);
+  height: auto;
+  border-right: 1px solid black;
+}
+
+.nav-link:first-of-type {
+  margin-top: 80px;
+}
+
+.nav-link {
+  display: block;
+  color: black;
+  text-decoration: none;
+  border-top: 1px solid black;
+  padding: 15px 35px;
+  height: 55px;
+  font-size: 1rem;
+}
+
+#main-doc-container {
+  padding: 20px 4%;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  text-wrap: wrap;
+  word-break: normal;
+  word-wrap: normal;
+}
+
+.main-section  h2 {
+  font-size: 1.7rem;
+}
+
+.main-section  p {
+  margin-left: 10px;
+}
+
+code {
+  display: block;
+  position: relative;
+  white-space: pre-line;
+  word-break: normal;
+  word-wrap: normal;
+  text-align: left;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  margin-left: 20px;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+.main-section header {
+  font-size: 1.8rem;
+  font-weight: thin;
+}
+
+.main-section header h2 {
+  margin: 0;
+  padding: 5px 0;
+  font-weight: thin;
+}
+
+li {
+  line-height: 1.5rem;
+  margin: 15px 0;
+}
+
+@media (max-width: 650px) {
+  body {
+    height: 100%;
+  }
+  #nav-container {
+    position: relative;
+    display: block;
+    background-color: white;
+    float: none;
+    height: 242px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-right: none;
+  }
+  #nav-container header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 1px solid black;
+  }
+
+  .nav-link:first-of-type {
+    margin-top: 75px;
+
+  }
+
+  #main-doc-container {
+    height: 100%;
+
+  }
+}
+
+@media (min-height: 770px) {
+  .nav-link {
+    height: calc(100vh / 14);
+    padding: calc(100vh / 14 / 2 / 1.5) 35px;
+  }
+}
