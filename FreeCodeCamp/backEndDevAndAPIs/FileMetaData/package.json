@@ -1,0 +1,21 @@
+{
+  "name": "file_metadat",
+  "version": "1.0.0",
+  "description": "A file metadata project for freecodecamp",
+  "author": "James Crooke",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "cors": "^2.8.5",
+    "@types/node": "^18.0.6",
+    "node-fetch": "^3.2.6",
+    "body-parser": "^1.20.2",
+    "multer": "1.4.5-lts.1"
+  }
+}

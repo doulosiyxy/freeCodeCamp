@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortner Microservice</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="https://www.dl.dropboxusercontent.com/s/19d2jggek8qh95k/favicon.png?dl=0"/>
+  </head>
+  <body>
+    <h1>URL Shortner Microservice</h1>
+    <main>
+      <div>
+        <form action="api/shorturl" method="post">
+          <fieldset>
+            <legend>URL shortner</legend>
+            <label>URL:</label>
+            <input id="url_input" type="text" name="url" value="https://www.freecodecamp.org/">
+            <input id="btn" type="submit" value="POST URL">
+          </fieldset>
+        </form>
+        <p>Enter your url or add the short url code in the browser after api/shorturl/</p>
+      </div>
+    </main>
+  </body>
+</html>
